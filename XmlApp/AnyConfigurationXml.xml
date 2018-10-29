@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnyConfigurationXml>
+  <!--Имя конфига-->
+  <Name>Global</Name>
+  <!--На будущее заготовка -->
+  <CustomParameter />
+  <Booking>true</Booking>
+  <!--Логирование-->
+  <Logging>
+    <Enabled>true</Enabled>
+    <Default>
+      <LogLevel>Debug</LogLevel>
+      <Path>D:\project\logs</Path>
+      <NamePostfix>Debug</NamePostfix>
+      <NumOfFiles>4</NumOfFiles>
+      <FileSizeInMb>10</FileSizeInMb>
+      <NameRollingStyle>Date</NameRollingStyle>
+    </Default>
+    <Queue>
+      <StanadardLogQueueName>log_queue</StanadardLogQueueName>
+      <!-- Количество накопленных сообщений для вставки -->
+      <BatchSize>500</BatchSize>
+      <!-- Таймаут в миллисекундах, время ожидания сообщения из очереди -->
+      <BatchTimeout>10</BatchTimeout>
+    </Queue>
+    <UseDailyLog>false</UseDailyLog>
+    <!--Отправка уведомления-->
+    <EnabledSendFatal>false</EnabledSendFatal>
+  </Logging>
+</AnyConfigurationXml>
